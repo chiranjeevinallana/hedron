@@ -1,0 +1,384 @@
+.logoImg {
+    height: 4rem;
+    width: 4rem;
+}
+
+/* @media screen and (max-width: 368px){
+  .logoImg {
+      height:2rem;
+  }
+} */
+
+nav > a {
+  cursor: pointer; 
+
+}
+
+footer {
+    background-color:#2C3942;
+    color:white;
+}
+
+.statsCard {
+    position:relative;
+    top:145px; 
+
+}
+
+.btnst2 {
+  position: relative;
+    bottom: 4px;
+    height: 38px!important;
+    width: 38px !important;
+    background-color: black !important;
+    border:2px solid black !important;
+    color:white !important;
+}
+
+@media screen and (max-width: 767px){
+  .logoresp {
+     font-weight:900;
+     font-size:1rem;
+
+  }
+
+}
+
+.custm1 > .fa {
+    color: #0776be;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+}
+
+.custm1 {
+    color:whtie;
+    
+}
+.custm1:hover {
+    color:white;
+    background-color:blue;
+    
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .footer_call {
+    position: fixed;
+    z-index: 9;
+    bottom: 4%;
+    left: 3%;
+    display: none;
+    z-index: 999;
+  }
+
+  .footer_call .fa.fa-phone {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #ff0e0e;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff
+  }
+
+  @media screen and (max-width: 767px){
+    .footer_call {
+        display: block;
+    }
+  }
+
+  .buttonSt {
+    /* background-color:black !important;
+    color:white !important; */
+    background-color: orange !important;
+    color: white !important;
+    border-color: orange;
+  }
+
+  .footer_call > i {
+    cursor: pointer;
+  }
+
+
+  .footer_top {
+    position: fixed;
+    z-index: 9;
+    bottom: 4%;
+    right: 3%;
+    display: none;
+    z-index: 999;
+  }
+
+  .footer_top .fa.fa-arrow-up {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: yellow;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff
+  }
+
+  @media screen and (max-width: 767px){
+    .footer_top {
+        display: block;
+    }
+  }
+
+  .footer_top > i {
+    cursor: pointer;
+  }
+
+  .floating-wpp-button {
+    width: 50px !important;
+    height: 50px !important;
+    background-color: rgb(37, 211, 102);
+    margin-bottom: 15px !important;
+    z-index: 999;
+  
+  }
+
+  #toTop {
+    position: fixed;
+    bottom: 5%;
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100px;
+  }
+  @media screen and (max-width: 767px){
+    #toTop {
+      bottom: 3%;
+  }
+  
+  }
+
+  #toTop i {
+    font-size: 18px;
+    display: block;
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 30px;
+    background-image: linear-gradient(to left, #F4C225, #F4C225);
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+  }
+
+  @media screen and (max-width: 767px){
+    #toTop span {
+      display: none;
+  }
+  }
+
+  #toTop span {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    right: 0;
+    color:#F4C225;
+    /* color: #609af4; */
+    top: 10px;
+    font-family: 'OpenSans-SemiBold';
+  }
+
+
+/* .btnst2 {
+  position: relative;
+    bottom: 4px;
+} */
+
+.a-h:hover {
+
+ /* background-color:blue */
+ background-color:#4299E1;
+ padding:5px;
+border-radius: 10px;
+color:white;
+}
+
+.new {
+  padding: 3px;
+  background-color:#FF9900;
+  border-radius: 5px;
+  color: white;
+}
+
+
+@media screen and (max-width: 767px){
+  nav .text-xl {
+    font-size:1rem;
+}
+.clsStyl {
+  font-size:1rem;
+  text-align: center;
+  margin-right:30%;
+}
+}
+
+.catgry {
+   color:white;
+   font-weight: 700;
+}
+
+.catgryTitle {
+  color:#fbeb55
+}
+
+.catgryDescptn {
+  color:white;
+}
+
+#contactpage {
+  background: #ebebec;
+  height: 100%;
+  display: table;
+  width: 100%;
+}
+
+.inn_banner {
+  padding: 30px 0;
+  position: relative;
+  background: url(../images/logo_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+  min-height: 220px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* contact us form */
+.contactUs {
+  /* background-color:#4299E1; */
+  background-color:gray;
+  color:white;
+
+}
+
+.list-inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span > svg {
+  color:white;
+}
+
+ /* .contactImg {
+  background-image:url('./images/Hedron.jpg');
+    background-repeat: no-repat;
+    background-repeat: no-repeat;
+    /* opacity: 1.1; */
+    /* background-blend-mode: screen;
+    background-position: initial; */
+    /* opacity: .9; 
+} */
+
+
+/** brnach **/
+.branchBg {
+  background: #ebebec;
+}
+
+.branchCard {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.directionBg > span > i{
+ cursor: pointer;
+}
+
+.directionBg > span > i:hover{
+ color:orange
+ }
+
+.directionBg > span > p{
+  cursor: pointer;
+ }
+
+ .directionBg > span > p:hover{
+  color:orange
+ }
+
+ .star {
+  color:#ffb606
+ }
+
+ .whiteStar {
+   color:gray;
+ }
+
+ .curser {
+   cursor: pointer;
+ }
+
+ .botique::first-letter {
+   color:red
+ }
+
+
+
+
+

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HEDRON ENGINEERING
+        </title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+        <!--right click disabled-->
+        <script>
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        </script>
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!--Floating WhatsApp css-->
+        <link rel="stylesheet"
+            href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+        <!--Floating WhatsApp javascript-->
+        <script type="text/javascript"
+            src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+        <script>
+            $(function () {
+                $('#WAButton').floatingWhatsApp({
+                    phone: '919052122000', //WhatsApp Business phone number International format-
+                    //Get it with Toky at https://toky.co/en/features/whatsapp.
+                    headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+                    popupMessage: 'Hello, how can we help you?', //Popup Message
+                    showPopup: true, //Enables popup display
+                    buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
+    
+    
+                    position: "right"
+                    //headerColor: 'crimson', //Custom header color
+                    //backgroundColor: 'crimson', //Custom background button color
+                });
+            });
+        </script>
+    
+    </head>
+
+<body>
+    <div id="toTop" onclick="topFunction()">
+        <i class="fa fa-caret-up" aria-hidden="true"></i>
+        <span>Scroll Up</span>
+    </div>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("toTop");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            x.classList.toggle("hidden");
+        }
+    </script>
+
+<nav class="flex items-center justify-between flex-wrap bg-blue-darkest p-4 z-10">
+    <div class="flex items-center flex-no-shrink text-white mr-6 ">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="./index.html">
+            <img src="images/Hedron.jpg" class="logoImg">
+            <span class="font-bold text-xl logoresp" style="font-weight: 700">
+                <font color="#075BA9">HEDRON</font>
+                <!-- <font color="#E92C2F">ENGINEERING</font> -->
+                <font color="#075BA9">ENGINEERING</font>
+            </span>
+        </a>
+    </div>
+    <div class="block lg:hidden">
+        <button
+            class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-darkest hover:bg-white btnst2 buttonSt"
+            onclick="myFunction()">
+            <svg class="fill-current h-3 w-3 buttonSt" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+        </button>
+    </div>
+    <div class="w-full hidden lg:block flex-grow lg:flex lg:items-center lg:w-auto" id="nav">
+        <div class="text-sm lg:flex-grow">
+            
+
+            <a href="./index.html" class="a-h block mt-4 lg:inline-block lg:mt-0  text-500 hover:text-gray-900 mr-4">Home</a>
+            <!-- <a href=""
+                class="a-h block mt-4 lg:inline-block lg:mt-0  text-500 hover:text-gray-900 mr-4">Products</a>
+            <a href=""
+                class="a-h block mt-4 lg:inline-block lg:mt-0  text-500 hover:text-gray-900 mr-4">Services</a>
+            <a href="" class="a-h block mt-4 lg:inline-block lg:mt-0  text-500 hover:text-gray-900 mr-4">Design
+                and Enginnering</a> -->
+                <a href="./services.html"
+                class="a-h block mt-4 lg:inline-block lg:mt-0  text-500 hover:text-gray-900 mr-4">Services</a>
+            <a href="./clients.html" class="a-h block mt-4 lg:inline-block lg:mt-0  text-500 hover:text-gray-900 mr-4">Clients
+            </a>
+
+            <!-- <a href="" class="a-h block mt-4 lg:inline-block lg:mt-0  text-500 hover:text-gray-900 mr-4">Careers
+            </a> -->
+            <a href="./contact.html" class="a-h block mt-4 lg:inline-block lg:mt-0  text--500 hover:text-900 mr-4">Contact
+            </a>
+        </div>
+
+    </div>
+</nav>
+
+    <section class="contactUs text-white-900 body-font relative contactImg">
+        <div class="container px-5 py-8 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-4xl text-xl font-medium title-font mb-4 text-white-700">Contact Us</h1>
+                <ul class="list-inline text-white font-medium space-x-2  ">
+                    <li><a style="cursor: pointer;" href="./index.html">Home</a></li>
+                    <li><i class="fa fa-angle-double-right " aria-hidden="true"></i></li>
+                    <li><a class="text-yellow-500">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-700 body-font relative">
+        <div class="container px-5 py-24 mx-auto flex sm:flex-no-wrap flex-wrap">
+            <div
+                class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30450.62290787889!2d78.32226495211734!3d17.444014826854165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93a276decedf%3A0x2c12e79e6f9344e2!2sGachibowli%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1622719068599!5m2!1sen!2sin style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+                <div class="bg-white relative flex flex-wrap py-6">
+                    <div class="lg:w-1/2 px-6">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">ADDRESS</h2>
+                        <p class="leading-relaxed">Reg Office:Flat 402,Plot No 18,Survey no.66/2, Raidurg Pan Makhta,Gachibowli,Hydderabad-500032,India</p>
+                    </div>
+                    <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">EMAIL</h2>
+                        <a class="text-blue-500 leading-relaxed">info@hedronengg.in</a>
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mt-4">PHONE</h2>
+                        <p class="leading-relaxed"> +91-9052122000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+                <p class="leading-relaxed mb-5 text-gray-600">Please Provide your Feedback here, Your feedback helps us
+                    to create a better experience for us and for all of our customer</p>
+                <input
+                    class="bg-white rounded border border-gray-400 focus:outline-none focus:border-blue-500 text-base px-4 py-2 mb-4"
+                    placeholder="Name" type="text">
+                    <input
+                    class="bg-white rounded border border-gray-400 focus:outline-none focus:border-blue-500 text-base px-4 py-2 mb-4"
+                    placeholder="Phone" type="tel">
+                <input
+                    class="bg-white rounded border border-gray-400 focus:outline-none focus:border-blue-500 text-base px-4 py-2 mb-4"
+                    placeholder="Email" type="email">
+                <textarea
+                    class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-blue-500 text-base px-4 py-2 mb-4 resize-none"
+                    placeholder="Message"></textarea>
+                <button
+                    class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button>
+                <p class="text-xs text-gray-500 mt-3">Thanks you! For your Feedback.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+  
+    <footer class="text-gray-700 body-font">
+        <div
+            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewbox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                      </svg> -->
+                    <img src="images/hedronModified.jpg" class="logoImg">
+                    <span class="ml-3 text-xl text-white">HEDRON ENGINEERING </span>
+                </a>
+                <p class="mt-2 text-sm text-gray-500">
+                    HEDRON ENGINEERING is one of the Leading Company with highly experienced and skilled individuals to
+                    cater to
+                    the needs of Power Transmission and Distribution industry and Telecom infra Structure Industry.
+                </p>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium  tracking-widest text-xl mb-3 text-white">Contact</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800 text-white">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <a class="text-white-700 leading-relaxed text-white">info@hedronengg.in</a>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-900 text-white">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <a class="text-white-700 text-white leading-relaxed">+91-9052122000</a>
+                            </a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4" style="width:300px!important">
+                    <h2 class="title-font font-medium text-white tracking-widest text-xl mb-3">Address</h2>
+                    <nav class="list-none mb-10">
+                        <p class="mt-2 text-white">Reg Office:Flat 402,Plot No 18,Survey no.66/2, Raidurg Pan Makhta,
+                        </p>
+                        <p class="mt-2 text-white">Gachibowli,Hydderabad-500032</p>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="text-white">
+            <!--bg-gray-200-->
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-White-500 text-sm text-center sm:text-left">© 2021 HEDRON ENGINEERING PVT LTD
+                    —
+                    <a href="" rel="noopener noreferrer" class="text-white-600 ml-1" target="_blank">@ All Rights
+                        Reserved</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewbox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewbox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewbox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewbox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="footer_call">
+        <a href="tel:+91-9052122000" title="+91-9052122000"><i class="fa fa-phone" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="footer_top">
+        <div id="WAButton"></div>
+    </div>
+
+    <!--footer-->
+</body>
+
+</html>
